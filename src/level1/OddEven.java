@@ -1,5 +1,9 @@
 package level1;
 
+/**
+ * 프로그래머스 Lv1.
+ * 짝수와 홀수
+ */
 public class OddEven {
 
     public static void main(String[] args) {
