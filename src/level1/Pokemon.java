@@ -14,15 +14,15 @@ public class Pokemon
 	{
 		Pokemon pokemon = new Pokemon();
 		int[] nums = {3,1,2,3};
-		int result = pokemon.otherSolution(nums);
+		int result = pokemon.solution(nums);
 		System.out.println("result = " + result); // result 2
 		
 		int[] nums2 = {3,3,3,2,2,4};
-		int result2 = pokemon.otherSolution(nums2);
+		int result2 = pokemon.solution(nums2);
 		System.out.println("result2 = " + result2); // result 3
 		
 		int[] nums3 = {3,3,3,2,2,2};
-		int result3 = pokemon.otherSolution(nums3);
+		int result3 = pokemon.solution(nums3);
 		System.out.println("result3 = " + result3); // result 2
 		
 	}
@@ -38,12 +38,12 @@ public class Pokemon
 		
 	}
 	
-	public int otherSolution(int[] nums)
-	{
-		HashSet<Integer> map = Arrays.stream(nums).boxed()
-				.collect(Collectors.toCollection(() -> new HashSet()));
-		
-		return Math.min(map.size(), nums.length / 2);
-		
-	}
+//	public int otherSolution(int[] nums)
+//	{
+//		HashSet<Integer> map = Arrays.stream(nums).boxed()
+//				.collect(Collectors.toCollection(() -> new HashSet()));
+//
+//		return Math.min(map.size(), nums.length / 2);
+//
+//	}
 }
